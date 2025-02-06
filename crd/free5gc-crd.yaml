@@ -1,0 +1,26 @@
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  name: free5gcs.networking.free5gc.com
+spec:
+  group: networking.free5gc.com
+  names:
+    kind: Free5GC
+    plural: free5gcs
+    singular: free5gc
+  scope: Namespaced
+  versions:
+    - name: v1
+      served: true
+      storage: true
+      schema:
+        openAPIV3Schema:
+          type: object
+          properties:
+            spec:
+              type: object
+              properties:
+                amf:
+                  type: string
+                smf:
+                  type: string
