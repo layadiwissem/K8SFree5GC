@@ -1,1 +1,2 @@
 Fixed duplicate Docker repository issue on Ubuntu 22.04
+Minikube installed successfully
